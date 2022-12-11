@@ -1,0 +1,72 @@
+#nav-bar-list li{
+    width: 100%;
+    background-color: #C5754E;
+    padding: 15px 5px;
+    
+    
+}
+
+nav ul li a{
+    text-decoration: none !important;
+    font-family:'Poppins';
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size:16px;
+    color:black;
+    position:relative;
+    padding:15px 0px 15px 25px;
+    transition:all 0.5s;
+}
+
+#nav-bar-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav-bar-list li:hover{
+    background-color: white;
+    transition: 0.25s ease-in all;
+    color:#2b2626;
+}
+
+
+
+
+nav ul li{
+   
+    border-top: 1px solid white ;
+    
+    
+}
+
+nav ul li:last-child{
+    
+    border-bottom: 1px solid white ;
+    
+    
+}
+
+nav ul li:first-child{
+    
+    border-top: 1px solid white ;
+    
+    
+}
+
+.order-menu {
+    overflow-y: scroll;
+    height:90% !important;
+}
+
+.invoice{
+    border-top: 1px solid white ;
+    padding: 20px 0;
+    margin: 0 !important;
+
+}
+
+.invoice:last-of-type{
+    border-bottom: 1px solid white;
+}
+
