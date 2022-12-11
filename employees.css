@@ -1,0 +1,79 @@
+p{
+    margin: 0 !important;
+
+}
+
+ul{
+    list-style: none;
+    text-decoration: none !important;
+    
+}
+/* edit delete note for user */
+#list-cashier li{
+    border-radius: 25px;
+    padding: 5px 10px;
+    background-color: lightgrey;
+    text-decoration: none;
+}
+
+#list-cashier{
+    width: 15%
+  
+}
+
+#nav-bar-list li{
+    width: 100%;
+    background-color: #C5754E;
+    padding: 15px 5px;
+    
+}
+
+#nav-bar-list li a{
+    text-decoration: none !important;
+    color:black;
+}
+
+iconify-icon{
+    color:red;
+}
+
+
+
+
+#nav-bar-list li:hover{
+    background-color:white ;
+    transition: 0.25s ease-in all;
+}
+
+#nav-bar-list li:nth-of-type(n+1){
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.employee{
+   
+    padding: 10px 0px;
+
+}
+
+.employee:hover{
+    background-color: lightgrey;
+}
+
+#employee-table{
+    background-color: white; 
+    width:80%;
+    height: 80%;
+    /* overflow-y: scroll; */
+
+}
+
+button{
+    background-color: #D80000;
+    color: white;
+    font-family: "Poppins";
+    border: none;
+    border-radius:50px !important;
+    padding: 10px 15px;
+}

@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+#nav-bar-list li{
+    width: 100%;
+    background-color: #C5754E;
+    padding: 15px 5px;
+    
+}
+
+nav ul li a{
+    text-decoration: none !important;
+    font-family:'Poppins';
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size:16px;
+    color:black;
+    position:relative;
+    padding:15px 0px 15px 25px;
+    transition:all 0.5s;
+    color: white;
+}
+
+#nav-bar-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+nav ul li a:hover{
+    color: black;
+}
+
+#nav-bar-list li:hover{
+    
+    background-color: #DCB672;
+    transition: 0.25s ease-in all;
+    
+}
+
+
+
+
+nav ul li{
+   
+    border-top: 1px solid white ;
+    
+    
+}
+
+nav ul li:last-child{
+    
+    border-bottom: 1px solid white ;
+    
+    
+}
+
+nav ul li:first-child{
+    
+    border-top: 1px solid white ;
+    
+    
+}
+
+.order-menu {
+    overflow-y: scroll;
+    height:90% !important;
+}
+
+.invoice{
+    border-top: 1px solid white ;
+    padding: 20px 0;
+    margin: 0 !important;
+
+}
+
+.invoice:last-of-type{
+    border-bottom: 1px solid white;
+}
+
+.img{
+    margin-left: 80px !important;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.clear-btn {
+    
+    background-color: #C5754E;
+    border: none;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0px;
+    color: #ecf0f1;
+    
+}
+.clear-btn:hover {
+    border-bottom: 4px solid #DCB672;
+    margin-top: 4px;
+}
+
+
+.hot-btn {
+    
+    background-color: #C5754E;
+    border: none;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0px;
+    color: #ecf0f1;
+    
+}
+.hot-btn:hover {
+    border-bottom: 4px solid #DCB672;
+    margin-top: 4px;
+}
+
+.cold-btn {
+    
+    background-color: #C5754E;
+    border: none;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0px;
+    color: #ecf0f1;
+    
+}
+.cold-btn:hover {
+    border-bottom: 4px solid #DCB672;
+    margin-top: 4px;
+}
+
+.blended-btn {
+    
+    background-color: #C5754E;
+    border: none;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0px;
+    color: #ecf0f1;
+    
+}
+.blended-btn:hover {
+    border-bottom: 4px solid #DCB672;
+    margin-top: 4px;
+}
+
