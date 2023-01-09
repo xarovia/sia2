@@ -15,28 +15,28 @@
         <nav class="col-2 p-0 m-0 h-100" style="background-color: #C5754E;">
             <img class="img" src="images/coffeelogo.png" width="50%" alt="">
             <ul class="w-100" id="nav-bar-list">
-                <li><a href="#"><iconify-icon icon="material-symbols:space-dashboard-outline"></iconify-icon> Dashboard </a></li>
-                <li><a href="#"><iconify-icon icon="mdi:user-box"></iconify-icon> Employee</a></li>
-                <li><a href="#"><iconify-icon icon="carbon:receipt"></iconify-icon>New Order</a></li>
-                <li><a href="#"><iconify-icon icon="material-symbols:inventory-2-outline-rounded"></iconify-icon>&nbsp; Inventory </a></li>
-                <li><a href="#"><iconify-icon icon="icon-park-outline:return"></iconify-icon>&nbsp; Returns </a></li>
-                <li><a href="#"><iconify-icon icon="icon-park-outline:ad-product"></iconify-icon>&nbsp; Products </a></li>
-                <li><a href="#"><iconify-icon icon="material-symbols:settings-rounded"></iconify-icon>&nbsp;Settings </a></li>
-                <li><a href="#"><iconify-icon icon="material-symbols:logout-rounded"></iconify-icon>&nbsp; Logout</a></li>
+                <li id="dashboard"><a href="#"><iconify-icon icon="material-symbols:space-dashboard-outline"></iconify-icon> Dashboard </a></li>
+                <li id="employee"><a href="#"><iconify-icon icon="mdi:user-box"></iconify-icon> Employee</a></li>
+                <li id="order"><a href="#"><iconify-icon icon="carbon:receipt"></iconify-icon>New Order</a></li>
+                <li id="pick-inventory"><a href="#"><iconify-icon icon="material-symbols:inventory-2-outline-rounded"></iconify-icon>&nbsp; Inventory </a></li>
+                <li id="return"><a href="#"><iconify-icon icon="icon-park-outline:return"></iconify-icon>&nbsp; Returns </a></li>
+                <li id="products"><a href="#"><iconify-icon icon="icon-park-outline:ad-product"></iconify-icon>&nbsp; Products </a></li>
+                <li id="settings"><a href="#"><iconify-icon icon="material-symbols:settings-rounded"></iconify-icon>&nbsp;Settings </a></li>
+                <li id="logout"><a href="#"><iconify-icon icon="material-symbols:logout-rounded"></iconify-icon>&nbsp; Logout</a></li>
             </ul>
         </nav>
 
-        <div class="col-8 p-0 pt-3 ps-3 pe-3 " style="background-color: #D9D9D9; height: 100%;">
-            <button class="clear-btn">Clear</button>
-            <button class="hot-btn">Hot Drinks</button>
-            <button class="cold-btn">Cold Drinks</button>
-            <button class="blended-btn">Blended Drinks</button>
+        <div class="col-8 p-0 pt-3 ps-3 pe-3" style="background-color: #D9D9D9; height: 100%;">
+            <button class="clear-btn shadow">Clear</button>
+            <button class="hot-btn shadow">Hot Drinks</button>
+            <button class="cold-btn shadow">Cold Drinks</button>
+            <button class="blended-btn shadow">Blended Drinks</button>
         
 
             <div class="order-table " style=" position: relative; height: 90%; ">
                 <div style="height: 10%;">
-                    <label for="exampleDataList" class="form-label"></label>
-                    <input class="form-control" type="search" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+                    <label for="exampleDataList" class="form-label "></label>
+                    <input class="form-control shadow" type="search" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
                     <datalist id="datalistOptions">
                     <option value="Sea Salt Matcha">
                     <option value="Dirty Matcha">
@@ -47,28 +47,19 @@
                 </div>
                 <div class="order-menu row p-0 mx-0 d-flex flex-wrap">
 
-
                     <div class="col-3 mb-3 d-flex justify-content-center p-0" style="height: 58%;" >
-                        <div class="card shadow" style="width: 15rem;">
-                            <img src="images/caremelfrap.jpg"  class="card-img-top" alt="...">
+                        <div class="card shadow p-3" style="width: 15rem;">
+                            <img src="images/caremelfrap.jpg" width="100%" class="card-img-top img-thumbnail" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title text-center">Caramel Frappuccino</h5>
                                 <p class="card-text text-center">PHP 180</p>
                                 <div class=" d-flex justify-content-center" style="width: 100%;">
-                                    <button class="btn btn-danger ">Add</button>
+                                    <button class="btn btn-outline-danger ">Add</button>
                                 </div>
                             </div>
                             
                         </div> 
                     </div>
-
-
-
-
-
-  
-
-
                 </div>
                 
 
@@ -76,62 +67,82 @@
             </div>
         </div>
 
-        <div class="col-2 p-0" style="background-color: green;">
-            <h3 class="p-3">Customer Order</h3>
+        <div class="d-flex-column col-2 p-0" style="background-color: #C5754E; height: 100%; position: relative;">
+            <div style="height: 80%;">
+                <h3 class="p-3">Customer Order</h3>
 
-            <div class="invoice row  d-flex align-items-center  w-100  ">
-                <div class="col-4 p-0 text-center " >
-                    <p class="m-0">Sea Salt Matcha</p>
-                </div>
-                <div class="col-4 p-0">              
-                    <div class="d-flex justify-content-center">
-                        <button class="px-2">-</button>
-                        <input type="text" disabled style="width:20%; border-top: 2px solid black; border-bottom: 2px solid black;">
-                        <button class="px-2">+</button>
+                <div class="invoice row  d-flex align-items-center  w-100  ">
+                    <div class="col-4 p-0 text-center " >
+                        <p class="m-0">Sea Salt Matcha</p>
+                    </div>
+                    <div class="col-4 p-0">              
+                        <div class="d-flex justify-content-center">
+                            <button class="px-2">-</button>
+                            <input type="text" disabled style="width:20%; border-top: 2px solid black; border-bottom: 2px solid black;">
+                            <button class="px-2">+</button>
+                        </div>
+                    </div>
+                    <div class="col-4 p-0">
+                        <p class="m-0 text-center">PHP 180</p>
                     </div>
                 </div>
-                <div class="col-4 p-0">
-                    <p class="m-0 text-center">PHP 180</p>
-                </div>
-            </div>
-            <div class="invoice row d-flex align-items-center  w-100  ">
-                <div class="col-4 p-0 text-center " >
-                    <p class="m-0">Sea Salt Matcha</p>
-                </div>
-                <div class="col-4 p-0">              
-                    <div class="d-flex justify-content-center">
-                        <button class="px-2">-</button>
-                        <input type="text" disabled style="width:20%; border-top: 2px solid black; border-bottom: 2px solid black;">
-                        <button class="px-2">+</button>
+                <div class="invoice row d-flex align-items-center  w-100  ">
+                    <div class="col-4 p-0 text-center " >
+                        <p class="m-0">Sea Salt Matcha</p>
+                    </div>
+                    <div class="col-4 p-0">              
+                        <div class="d-flex justify-content-center">
+                            <button class="px-2">-</button>
+                            <input type="text" disabled style="width:20%; border-top: 2px solid black; border-bottom: 2px solid black;">
+                            <button class="px-2">+</button>
+                        </div>
+                    </div>
+                    <div class="col-4 p-0">
+                        <p class="m-0 text-center">PHP 180</p>
                     </div>
                 </div>
-                <div class="col-4 p-0">
-                    <p class="m-0 text-center">PHP 180</p>
-                </div>
-            </div>
-            <div class="invoice row d-flex align-items-center  w-100  ">
-                <div class="col-4 p-0 text-center " >
-                    <p class="m-0">Sea Salt Matcha</p>
-                </div>
-                <div class="col-4 p-0">              
-                    <div class="d-flex justify-content-center">
-                        <button class="px-2">-</button>
-                        <input type="text" disabled style="width:20%; border-top: 2px solid black; border-bottom: 2px solid black;">
-                        <button class="px-2">+</button>
+                <div class="invoice row d-flex align-items-center  w-100  ">
+                    <div class="col-4 p-0 text-center " >
+                        <p class="m-0">Hot Mocha</p>
+                    </div>
+                    <div class="col-4 p-0">              
+                        <div class="d-flex justify-content-center">
+                            <button class="px-2">-</button>
+                            <input type="text" disabled style="width:20%; border-top: 2px solid black; border-bottom: 2px solid black;">
+                            <button class="px-2">+</button>
+                        </div>
+                    </div>
+                    <div class="col-4 p-0">
+                        <p class="m-0 text-center">PHP 180</p>
                     </div>
                 </div>
-                <div class="col-4 p-0">
-                    <p class="m-0 text-center">PHP 180</p>
+            </div>
+
+            <div class="px-3 d-flex flex-column justify-content-evenly" style="height:20%;">
+                <div class="p-0 m-0 ">
+                    <button class="clear-order-btn">Clear Order</button>
+                </div>
+            
+                <div class="p-0 m-0">
+                    <p class="totalPrice">TOTAL PRICE:</p>
+                </div>
+            
+                <div class="p-0 m-0">
+                    <button class="process-order-btn">Process Order</button>
                 </div>
             </div>
+
         </div>
-        
+
+
     </div>
 
+  
 
 </body>
 
 
 
 <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+<script src="index.js"></script>
 </html>

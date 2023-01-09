@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cafe-stock.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Cafe Inventory Stock</title>
+</head>
+<body style="width:100vw; height: 100vh;">
+
+    <div class="row p-0 m-0 h-100">
+        <nav class="col-2 p-0 m-0 h-100" style="background-color: #C5754E;">
+            <img class="img" src="images/coffeelogo.png" width="50%" alt="">
+            <ul class="w-100" id="nav-bar-list">
+                <li id="dashboard"><a href="#"><iconify-icon icon="material-symbols:space-dashboard-outline"></iconify-icon> Dashboard </a></li>
+                <li id="employee"><a href="#"><iconify-icon icon="mdi:user-box"></iconify-icon> Employee</a></li>
+                <li id="order"><a href="#"><iconify-icon icon="carbon:receipt"></iconify-icon>New Order</a></li>
+                <li id="pick-inventory"><a href="#"><iconify-icon icon="material-symbols:inventory-2-outline-rounded"></iconify-icon>&nbsp; Inventory </a></li>
+                <li id="return"><a href="#"><iconify-icon icon="icon-park-outline:return"></iconify-icon>&nbsp; Returns </a></li>
+                <li id="products"><a href="#"><iconify-icon icon="icon-park-outline:ad-product"></iconify-icon>&nbsp; Products </a></li>
+                <li id="settings"><a href="#"><iconify-icon icon="material-symbols:settings-rounded"></iconify-icon>&nbsp;Settings </a></li>
+                <li id="logout"><a href="#"><iconify-icon icon="material-symbols:logout-rounded"></iconify-icon>&nbsp; Logout</a></li>
+            </ul>
+        </nav>
+
+        <div class="col-10 p-0 pt-3 ps-3 pe-3 " style="background-color: lightgrey; height: 100%;">
+            <button class="btn-back">Back</button>
+
+            <div class="ms-5 mt-3" style="background-color: lightgrey;">
+                <p class="mainText">Cafe Inventory Stock-In</p>
+                <p class="">Transaction No.</p>                
+                <form class="m-0 p-0 " name="myForm" action="/action_page.php" method="get">
+                    <div class="d-flex justify-content-between " style="width:38%;">
+                        <div class="d-flex ps-3">
+                            <label for="fname">Name:</label>
+                            <input type="text" id="name" name="name">
+                        </div>
+                        <div class="d-flex">
+                            <label for="">Unit:</label>
+                            <input type="text" id="unit" name="unit">
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between pt-3" style="width:38%;">
+                        <div class="d-flex ">
+                            <label for="fname">Quantity:</label>
+                            <input type="text" id="name" name="name">
+                        </div>
+                        <div class="d-flex">
+                            <label for="">Expiry Date:</label>
+                            <input type="text" id="unit" name="unit">
+                        </div>
+                    </div>
+                    <div class="pt-3">
+                        <p>Cashier: Reinhardt Benedicto</p>
+                    </div>
+
+
+
+                </form>
+                <div class="pt-3 ps-3">
+                  <button class="btn-stockIn">Add Items</button>
+                  <button class="btn-stockIn">Stock-In</button>
+                  <button class="btn-stockOut">Stock-out</button>
+                </div>
+
+
+                <div class="container row ms-2 mt-3 p-4" style="background-color: white; border-radius: 25px;">
+                    <div class="d-flex justify-content-between ">
+             
+                    </div>
+                    
+                     <div class="mt-3">
+                       <table id="example" class="display" style="width: 100%;">
+                         <thead>
+                           <tr>
+                             <th>ID</th>
+                             <th>Name</th>
+                             <th>Quality</th>
+                             <th>Unit</th>
+                             <th>Date of Expiry</th>
+                             <th>Price</th>
+                             <th>Subtotal</th>
+                             <th></th>
+                           </tr>
+             
+                         </thead>
+             
+                         <tbody>
+                           <tr >
+                             <td>1</td>
+                             <td>Quiza</td>
+                             <td>5</td>
+                             <td>1kg</td>
+                             <td>0/24/2022</td>
+                             <td>180 PHP</td>
+                             <td>500 PHP</td>
+                             <td>
+                                <div class="d-flex">
+                                    edit
+                                    delete
+                                </div>
+                                
+                            </td>
+                             
+                           </tr>
+                           <tr >
+                             <td>1</td>
+                             <td>Rain</td>
+                             <td>5</td>
+                             <td>1kg</td>
+                             <td>0/24/2022</td>
+                             <td>180 PHP</td>
+                             <td>500 PHP</td>
+                             <td>
+                                <div class="d-flex">
+                                    edit
+                                    delete
+                                </div>
+                                
+                            </td>
+                             
+                           </tr>
+                           <tr >
+                             <td>1</td>
+                             <td>Ian</td>
+                             <td>5</td>
+                             <td>1kg</td>
+                             <td>0/24/2022</td>
+                             <td>180 PHP</td>
+                             <td>500 PHP</td>
+                             <td>
+                                <div class="d-flex">
+                                    edit
+                                    delete
+                                </div>
+                                
+                            </td>
+                             
+                           </tr>
+
+             
+                         </tbody>
+                
+            </div>
+
+        </div>
+    
+    </div>
+
+</body>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+<script src="index.js"></script>
+<script>
+
+
+  $(document).ready(function () {
+    $('#example').DataTable({
+      lengthChange:false, 
+      pageLength:12
+    });
+  
+});
+</script>
+</html>

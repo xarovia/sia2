@@ -1,12 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
-    
-    
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
+.img{
+    margin-left: 80px !important;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
 
 #nav-bar-list li{
     width: 100%;
@@ -46,6 +42,9 @@ nav ul li a:hover{
     
 }
 
+
+
+
 nav ul li{
    
     border-top: 1px solid white ;
@@ -67,13 +66,57 @@ nav ul li:first-child{
     
 }
 
-.img{
-    margin-left: 80px !important;
-    padding-bottom: 25px;
-    padding-top: 25px;
+p{
+    margin: 0 !important;
+
 }
 
-
-.container{
-    margin-left: 50px !important;
+ul{
+    list-style: none;
+    text-decoration: none !important;
+    
 }
+/* edit delete note for user */
+#list-cashier li{
+    border-radius: 25px;
+    padding: 5px 10px;
+    background-color: lightgrey;
+    text-decoration: none;
+}
+
+#list-cashier{
+    width: 15%
+  
+}
+
+/* color of icons sa crud */
+
+
+
+.employee{
+   
+    padding: 10px 0px;
+
+}
+
+.employee:hover{
+    background-color: lightgrey;
+}
+
+#employee-table{
+    background-color: white; 
+    width:80%;
+    height: 80%;
+    /* overflow-y: scroll; */
+
+}
+
+button{
+    background-color: #D80000;
+    color: white;
+    font-family: "Poppins";
+    border: none;
+    border-radius:50px !important;
+    padding: 10px 15px;
+}
+

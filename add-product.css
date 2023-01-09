@@ -1,0 +1,56 @@
+.imgPrev{
+    font-size: 24px;
+    font-family: "Poppins";
+}
+.square{
+    height: 50px;
+    width: 50px;
+    padding: 30%;
+    background-color: #D9D9D9;
+    border: 1px black solid;
+}
+
+.changeImg{
+    padding: 7px 80px;
+    color: #979797;
+    border: 1px solid #D9D9D9 ;
+    border-radius: 2px;
+    background-color:white ;
+}
+
+.btn-reset{
+    padding: 8px 80px;
+    background-color: white;
+    border: 1px solid #D9D9D9 ;
+    border-radius: 2px;
+    font-family: "Poppins";
+}
+
+.btn-reset:hover{
+    background-color: #D80000;
+    color: white;
+}
+
+.btn-save{
+    padding: 8px 80px;
+    background-color: white;
+    border: 1px solid #D9D9D9 ;
+    border-radius: 2px;
+    font-family: "Poppins";
+}
+
+.btn-save:hover{
+    background-color: #D80000;
+    color: white;
+}
+
+
+
+.btn-back{
+    padding: 5px;
+    background-color: white;
+    border: 1px solid black ;
+    border-radius: 2px;
+    font-family: "Poppins";
+}
+

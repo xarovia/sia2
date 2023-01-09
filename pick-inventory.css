@@ -1,18 +1,14 @@
-* {
-    margin: 0;
-    padding: 0;
-    
-    
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
+.img{
+    margin-left: 80px !important;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
 
 #nav-bar-list li{
     width: 100%;
     background-color: #C5754E;
     padding: 15px 5px;
-    cursor: pointer;
+    
 }
 
 nav ul li a{
@@ -46,6 +42,9 @@ nav ul li a:hover{
     
 }
 
+
+
+
 nav ul li{
    
     border-top: 1px solid white ;
@@ -67,13 +66,27 @@ nav ul li:first-child{
     
 }
 
-.img{
-    margin-left: 80px !important;
-    padding-bottom: 25px;
-    padding-top: 25px;
+.main-inventory{
+    padding: 100px;
 }
 
+.cafe-inventory{
+    padding: 100px;
+}
 
-.container{
-    margin-left: 50px !important;
+button{
+    background-color: white;
+    color:black;
+    font-family: "Poppins";
+    font-size: 30px !important; 
+    border: none;
+    border-radius: 10px !important;
+}
+
+.cafe-inventory iconify-icon{
+    font-size: 150px;
+}
+
+.main-inventory iconify-icon{
+    font-size: 150px;
 }
