@@ -1,0 +1,56 @@
+p{
+    font-family: "Poppins";
+}
+
+.payment-txt{
+    font-family: "Poppins";
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.payment-container{
+    left: 400px;
+    top: 100px;
+    text-transform:uppercase;
+    font-family: "Poppins";
+}
+
+.container-title{
+    border-bottom: 2px solid black;
+}
+
+.btn-back{
+    border: none;
+
+}
+
+.btn-cash{
+    border: none;
+    background-color:#DCB672 ;
+    color: white;
+    padding: 10px 35px;
+}
+
+.btn-proceed{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color:#C5754E;
+    padding: 10px 327px;
+}
+
+.brews-txt{
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.receipt-txt{
+    font-weight: 700;
+
+}
+
+.order-txt{
+    font-size: 94px;
+    font-weight: 700;
+    
+}
+
