@@ -1,0 +1,64 @@
+#nav-bar-list li{
+    width: 100%;
+    background-color: #C5754E;
+    padding: 15px 5px;
+    cursor: pointer;
+}
+
+nav ul li a{
+    text-decoration: none !important;
+    font-family:'Poppins';
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size:16px;
+    color:black;
+    position:relative;
+    padding:15px 0px 15px 25px;
+    transition:all 0.5s;
+    color: white;
+}
+
+#nav-bar-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+nav ul li a:hover{
+    color: black;
+}
+
+#nav-bar-list li:hover{
+    
+    background-color: #DCB672;
+    transition: 0.25s ease-in all;
+    
+}
+
+nav ul li{
+   
+    border-top: 1px solid white ;
+    
+    
+}
+
+nav ul li:last-child{
+    
+    border-bottom: 1px solid white ;
+    
+    
+}
+
+nav ul li:first-child{
+    
+    border-top: 1px solid white ;
+    
+    
+}
+
+.img{
+    margin-left: 80px !important;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
