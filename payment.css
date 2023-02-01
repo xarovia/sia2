@@ -13,6 +13,11 @@ p{
     top: 100px;
     text-transform:uppercase;
     font-family: "Poppins";
+    border-radius: 20px;
+}
+
+.payment-container-items{
+    border-radius: 20px;
 }
 
 .container-title{
@@ -21,7 +26,7 @@ p{
 
 .btn-back{
     border: none;
-
+    padding: 5px 15px;
 }
 
 .btn-cash{
@@ -35,7 +40,7 @@ p{
     border: 1px solid black;
     border-radius: 10px;
     background-color:#C5754E;
-    padding: 10px 327px;
+    padding: 10px 430px;
 }
 
 .brews-txt{
@@ -60,4 +65,52 @@ p{
 
 .proditem-txt{
     font-size: 12px;
+}
+
+.container-receipt{
+    background-color: white;
+    border: 2px solid black;
+    border-bottom: 0;
+}
+
+.container-items{
+    background-color: white;
+    border: 2px solid black;
+    border-top: 0;
+}
+
+.totalForm{
+    background-color: white;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.transacForm{
+    border-top: 2px black dashed; 
+    border-bottom: 2px black solid; 
+    background-color: white;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    
+}
+.thankForm{
+    background-color: white;
+    border: 2px solid black;
+    border-top: 0;
+}
+
+.btn-noPrint{
+    border: 1px solid black;
+    color: black;
+    background-color: #D9D9D9;
+    padding: 0.5em 1em;
+    border-radius: 2px;
+}
+
+.btn-Print{
+    border: 1px solid black;
+    color: white;
+    background-color: #820A0A;
+    padding: 0.5em 1em;
+    border-radius: 2px;
 }
